@@ -36,4 +36,9 @@ public class VerticalMovement : MonoBehaviour
             _isJumped = true;
         }
     }
+
+    public void StopJump()
+    {
+        _verticalMovePosition = 0f;
+    }
 }

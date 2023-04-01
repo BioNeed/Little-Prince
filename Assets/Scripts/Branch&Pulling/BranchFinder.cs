@@ -2,7 +2,9 @@ using UnityEngine;
 
 public class BranchFinder : MonoBehaviour
 {
-    [SerializeField] private Rigidbody2D _playerRigidbody;
+    [SerializeField] private Transform _target;
+    [SerializeField] private PhysicsMovement _physicsMovement;
+    [SerializeField] private VerticalMovement _verticalMovement;
 
     public void FindBranchToPull()
     {
@@ -12,7 +14,9 @@ public class BranchFinder : MonoBehaviour
         {
             if (hits[i].collider.TryGetComponent(out BranchPulling branchPulling))
             {
-                branchPulling.Pull(_playerRigidbody);
+                branchPulling.TryStartPulling(_target);
+                _verticalMovement.StopJump();
+                _physicsMovement.SetBranchPulling(branchPulling);
                 break;
             }
         }

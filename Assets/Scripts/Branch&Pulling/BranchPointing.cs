@@ -5,7 +5,6 @@ public class BranchPointing : MonoBehaviour
 {
     [SerializeField] private ParticleSystem _passiveBranchGlow;
     [SerializeField] private ParticleSystem _activeBranchGlow;
-    [SerializeField] private BranchPulling _branchPulling;
 
     private void Start()
     {

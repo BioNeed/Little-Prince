@@ -167,7 +167,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 9f47d2d9fbd1aa74ab668c5a940aa812, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _playerRigidbody: {fileID: 1495248456}
+  _target: {fileID: 1495248455}
+  _physicsMovement: {fileID: 1495248465}
+  _verticalMovement: {fileID: 1495248460}
 --- !u!1 &242693538
 GameObject:
   m_ObjectHideFlags: 0
@@ -11571,7 +11573,7 @@ GameObject:
   - component: {fileID: 629134992}
   - component: {fileID: 629134991}
   m_Layer: 0
-  m_Name: tree2 (2)
+  m_Name: tree with branch
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -12507,6 +12509,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 629134992}
     m_Modifications:
+    - target: {fileID: 529065983, guid: 0edcf08e885976b4db205a516c0504cd, type: 3}
+      propertyPath: _pullingTime
+      value: 0.3
+      objectReference: {fileID: 0}
     - target: {fileID: 3167067182641116058, guid: 0edcf08e885976b4db205a516c0504cd, type: 3}
       propertyPath: m_RootOrder
       value: 0

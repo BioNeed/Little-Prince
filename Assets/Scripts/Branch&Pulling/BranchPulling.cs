@@ -1,4 +1,3 @@
-using System.Collections;
 using UnityEngine;
 
 public class BranchPulling : MonoBehaviour
@@ -6,24 +5,38 @@ public class BranchPulling : MonoBehaviour
     [SerializeField] private float _pullingTime;
     [SerializeField] private float _forceAfterPulling;
 
-    private const float EpsilonDistance = 0.4f;
+    private const float EpsilonDistance = 0.2f;
 
-    public void Pull(Rigidbody2D target)
-    {
-        Vector2 pull = transform.position - target.transform.position;
-        
-        StartCoroutine(FlyAfterPull(target, pull));
-    }
+    private bool _isPulling = false;
+    private Vector2 _pullingVector;
+    private Transform _pullingTarget;
 
-    private IEnumerator FlyAfterPull(Rigidbody2D target, Vector2 pull)
+    public bool IsPulling => _isPulling;
+
+    public void TryStartPulling(Transform target)
     {
-        while(Vector2.Distance(transform.position, target.position) > EpsilonDistance)
+        if (_isPulling == true)
         {
-            Vector2 pullingStep = pull * Time.fixedDeltaTime / _pullingTime;
-            target.MovePosition(target.position + pullingStep);
-            yield return null;
+            return;
         }
 
-        //target.AddForce();
+        _isPulling = true;
+
+        _pullingVector = transform.position - target.transform.position;
+        _pullingTarget = target;
+    }
+
+    public Vector2 CalculatePullingMovement()
+    {
+        if (Vector2.Distance(transform.position, _pullingTarget.position) > EpsilonDistance)
+        {
+            Vector2 pullingMovement = _pullingVector * Time.fixedDeltaTime / _pullingTime;
+            return pullingMovement;
+        }
+        else
+        {
+            _isPulling = false;
+            return Vector2.zero;
+        }
     }
 }
