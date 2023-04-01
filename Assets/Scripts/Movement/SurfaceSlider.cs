@@ -2,8 +2,6 @@ using UnityEngine;
 
 public class SurfaceSlider : MonoBehaviour
 {
-    [SerializeField] private float _maxSurfaceIncline;
-
     private Vector2 _normal;
 
     public Vector2 Project(Vector2 forward)

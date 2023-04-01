@@ -1,0 +1,10 @@
+﻿[*.cs]
+
+# S1125: Boolean literals should not be redundant
+dotnet_diagnostic.S1125.severity = none
+
+# IDE0100: Удалите лишнее равенство.
+dotnet_diagnostic.IDE0100.severity = none
+
+# S3903: Types should be defined in named namespaces
+dotnet_diagnostic.S3903.severity = none
