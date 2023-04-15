@@ -7,6 +7,7 @@ public class PhysicsMovement : MonoBehaviour
     
     private BranchPulling _branchPulling = null;
     private Rigidbody2D _rigidbody2D;
+    private FloatingPlatform _floatingPlatform = null;
 
     private void Start()
     {
@@ -16,6 +17,11 @@ public class PhysicsMovement : MonoBehaviour
     public void SetBranchPulling(BranchPulling branchPulling)
     {
         _branchPulling = branchPulling;
+    }
+
+    public void SetPlatformFloating(FloatingPlatform floatingPlatform)
+    {
+        _floatingPlatform = floatingPlatform;
     }
 
     public void Move(Vector2 direction)
@@ -28,10 +34,15 @@ public class PhysicsMovement : MonoBehaviour
         }
         else
         {
+            if (_floatingPlatform != null)
+            {
+                movePosition += _floatingPlatform.FloatingMovement;
+            }
+
             movePosition += _surfaceMovement.CalculateSurfaceMovement(direction);
             movePosition += _verticalMovement.CalculateVerticalMovement();
         }
 
-        _rigidbody2D.MovePosition(_rigidbody2D.position + movePosition);
+        _rigidbody2D.MovePosition(transform.position + new Vector3(movePosition.x, movePosition.y, 0));
     }
 }

@@ -6,12 +6,12 @@ public class GroundChecker : MonoBehaviour
 {
     [SerializeField] private LayerMask _groundLayerMask;
 
-    private const float GroundDistance = 0.0094f;
-
-    private readonly List<Collider2D> _groundColliders = new();
+    private readonly List<Collider2D> _groundColliders = new List<Collider2D>();
     private bool _isGrounded = false;
     private int _currentCollisionCount = 0;
-    
+
+    public const float GroundDistance = 0.0094f;
+
     public bool IsGrounded => _isGrounded;
 
     private void OnTriggerEnter2D(Collider2D collision)
