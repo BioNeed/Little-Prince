@@ -4,6 +4,8 @@ public class DeathZone : MonoBehaviour
 {
     [SerializeField] private Transform _respawnPoint;
     [SerializeField] private GameObject _deathScreen;
+    [SerializeField] private AudioSource _backgroundAudio;
+    [SerializeField] private AudioClip _gameOverSound;
 
     private Player _deadPlayer;
     private bool _isDead;
@@ -29,15 +31,17 @@ public class DeathZone : MonoBehaviour
         if (collision.TryGetComponent(out Player player))
         {
             _deadPlayer = player;
-            PauseGame();  
+            StopGame();  
         }
     }
 
-    private void PauseGame()
+    private void StopGame()
     {
         Time.timeScale = 0;
         _isDead = true;
         _deathScreen.SetActive(true);
+        _backgroundAudio.Stop();
+        _backgroundAudio.PlayOneShot(_gameOverSound);
     }
 
     private void RespawnPlayer()
@@ -46,5 +50,6 @@ public class DeathZone : MonoBehaviour
         Time.timeScale = 1;
         _isDead = false;
         _deathScreen.SetActive(false);
+        _backgroundAudio.Play();
     }
 }
