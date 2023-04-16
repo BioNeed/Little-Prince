@@ -4,6 +4,7 @@ public class BranchPulling : MonoBehaviour
 {
     [SerializeField] private float _pullingTime;
     [SerializeField] private float _forceAfterPulling;
+    [SerializeField] private MovementSounds _movementSounds;
 
     private const float EpsilonDistance = 0.2f;
 
@@ -24,6 +25,8 @@ public class BranchPulling : MonoBehaviour
 
         _pullingVector = transform.position - target.transform.position;
         _pullingTarget = target;
+
+        _movementSounds.PlayPullingSound();
     }
 
     public Vector2 CalculatePullingMovement()
@@ -36,6 +39,8 @@ public class BranchPulling : MonoBehaviour
         else
         {
             _isPulling = false;
+            _movementSounds.StopPullingSound();
+
             return Vector2.zero;
         }
     }

@@ -5,6 +5,7 @@ public class VerticalMovement : MonoBehaviour
     [SerializeField] private GroundChecker _groundChecker;
     [SerializeField] private float _jumpForce;
     [SerializeField] private float _gravityScale;
+    [SerializeField] private MovementSounds _movementSounds;
 
     private float _verticalMovePosition;
     private bool _isJumped = false;
@@ -34,6 +35,7 @@ public class VerticalMovement : MonoBehaviour
         if (_groundChecker.IsGrounded == true && _isJumped == false)
         {
             _isJumped = true;
+            _movementSounds.PlayJumpSound();
         }
     }
 
