@@ -3,6 +3,7 @@ using UnityEngine;
 public class CoinCollecting : MonoBehaviour
 {
     [SerializeField] private CoinsDisplay _coinsDisplay;
+    [SerializeField] private CoinCollectingSounds _sounds;
 
     private int _coinsCollected = 0;   
 
@@ -12,6 +13,7 @@ public class CoinCollecting : MonoBehaviour
         {
             _coinsCollected++;
             _coinsDisplay.DisplayCoins(_coinsCollected);
+            _sounds.PlayCoinPickup();
             Destroy(collision.gameObject);
         }
     }
