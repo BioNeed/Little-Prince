@@ -29,7 +29,7 @@ public class GameProgress : MonoBehaviour
     {
         int loadingLevelNumber;
         int levelNumber = SceneManager.GetActiveScene().buildIndex;
-        if (levelNumber == SceneManager.sceneCountInBuildSettings)
+        if (levelNumber + 1 == SceneManager.sceneCountInBuildSettings)
         {
             loadingLevelNumber = 0;
         }
