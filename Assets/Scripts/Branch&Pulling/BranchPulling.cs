@@ -3,7 +3,6 @@ using UnityEngine;
 public class BranchPulling : MonoBehaviour
 {
     [SerializeField] private float _pullingTime;
-    [SerializeField] private float _forceAfterPulling;
     [SerializeField] private MovementSounds _movementSounds;
 
     private const float EpsilonDistance = 0.2f;

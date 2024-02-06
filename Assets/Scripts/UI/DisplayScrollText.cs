@@ -17,7 +17,7 @@ public class DisplayScrollText : MonoBehaviour
         _isDisplaying = true;
     }
 
-    public void DisplayTextBeforeFinish(string message)
+    public void DisplayTextBeforeLevelFinish(string message)
     {
         _text.text = message;
         _scroll.SetActive(true);

@@ -17,10 +17,10 @@ public class GameProgress : MonoBehaviour
         switch(levelNumber)
         {
             case 1:
-                _displayText.DisplayTextBeforeFinish(_messageOnLevel1Finished);
+                _displayText.DisplayTextBeforeLevelFinish(_messageOnLevel1Finished);
                 break;
             case 2:
-                _displayText.DisplayTextBeforeFinish(_messageOnLevel2Finished);
+                _displayText.DisplayTextBeforeLevelFinish(_messageOnLevel2Finished);
                 break;
         }
     }

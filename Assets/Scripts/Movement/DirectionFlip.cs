@@ -25,8 +25,11 @@ public class DirectionFlip : MonoBehaviour
 
     private void FlipScaleX()
     {
-        float newScaleX = transform.localScale.x * (-1);
-        transform.localScale = new Vector3(newScaleX, 1, 1);
+        Vector3 newScale = new Vector3(transform.localScale.x * (-1),
+            transform.localScale.y,
+            transform.localScale.z);
+
+        transform.localScale = newScale;
         _facingRight = !_facingRight;
     }
 }
