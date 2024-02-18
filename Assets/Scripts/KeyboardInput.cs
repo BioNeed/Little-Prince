@@ -6,6 +6,7 @@ public class KeyboardInput : MonoBehaviour
     [SerializeField] private VerticalMovement _verticalMovement;
     [SerializeField] private DirectionFlip _directionFlip;
     [SerializeField] private BranchFinder _branchFinder;
+    [SerializeField] private LeverCollision _leverCollision;
 
     private void Update()
     {
@@ -17,6 +18,11 @@ public class KeyboardInput : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.F))
         {
             _branchFinder.FindBranchToPull();
+        }
+
+        if (Input.GetKeyDown(KeyCode.E) && _leverCollision.IsLeverActive)
+        {
+            _leverCollision.ToggleLever();
         }
     }
 

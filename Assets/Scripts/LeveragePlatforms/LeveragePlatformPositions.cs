@@ -2,17 +2,11 @@ using UnityEngine;
 
 public class LeveragePlatformPositions : MonoBehaviour
 {
+    [SerializeField] private Transform _zeroLevelPosition;
+    [SerializeField] private float _heightLevelOffset;
 
-
-    private void Start()
+    public float GetLevelHeight(int level)
     {
-        
+        return _zeroLevelPosition.position.y + level * _heightLevelOffset;
     }
-
-    private void Update()
-    {
-        
-    }
-
-    public 
 }
