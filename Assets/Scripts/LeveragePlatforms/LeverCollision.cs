@@ -7,15 +7,16 @@ public class LeverCollision : MonoBehaviour
 
     private bool _active = false;
 
-    public bool IsLeverActive => _active;
-
-    public void ToggleLever()
+    private void Update()
     {
-        if (!_active)
+        if (_active && Input.GetKeyDown(KeyCode.E))
         {
-            return;
+            ToggleLever();
         }
-        
+    }
+
+    private void ToggleLever()
+    {
         _lever.ToggleLever();
     }
 

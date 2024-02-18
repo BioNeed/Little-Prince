@@ -8,22 +8,15 @@ public class Lever : MonoBehaviour
     [SerializeField] private bool _firstPlatformGoesUpOnTurnedOn;
     [SerializeField] private LeveragePlatformMovement _secondPlatform;
     [SerializeField] private bool _secondPlatformGoesUpOnTurnedOn;
-
-    [SerializeField] private bool _turnedOn;
-    private bool _previousTurnedOn;
+    [SerializeField] private Animator _leverAnimator;
+    [SerializeField] private LeverSounds _leverSounds;
+    
+    private bool _turnedOn;
 
     private void Start()
     {
         _turnedOn = _initialTurnedOn;
-        _previousTurnedOn = _turnedOn;
-    }
-
-    private void Update()
-    {
-        if(_turnedOn != _previousTurnedOn)
-        {
-            ToggleLever();
-        }
+        _leverAnimator.SetBool("IsOn", _turnedOn);
     }
 
     public void ToggleLever()
@@ -34,6 +27,7 @@ public class Lever : MonoBehaviour
 
         var secondPlatformMoveUp = _turnedOn == _secondPlatformGoesUpOnTurnedOn;
         _secondPlatform.MovePlatform(secondPlatformMoveUp);
-        _previousTurnedOn = _turnedOn;
+        _leverAnimator.SetBool("IsOn", _turnedOn);
+        _leverSounds.PlayLeverToggling();
     }
 }

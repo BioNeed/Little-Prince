@@ -19,11 +19,6 @@ public class KeyboardInput : MonoBehaviour
         {
             _branchFinder.FindBranchToPull();
         }
-
-        if (Input.GetKeyDown(KeyCode.E) && _leverCollision.IsLeverActive)
-        {
-            _leverCollision.ToggleLever();
-        }
     }
 
     private void FixedUpdate()

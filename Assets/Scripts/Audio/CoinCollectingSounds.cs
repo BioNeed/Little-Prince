@@ -5,16 +5,16 @@ public class CoinCollectingSounds : MonoBehaviour
 {
     [SerializeField] private AudioClip[] _coinPickupSounds;
 
-    private AudioSource _audioSorce;
+    private AudioSource _audioSource;
 
     private void Start()
     {
-        _audioSorce = GetComponent<AudioSource>();
+        _audioSource = GetComponent<AudioSource>();
     }
 
     public void PlayCoinPickup()
     {
         int soundIndex = Random.Range(0, _coinPickupSounds.Length);
-        _audioSorce.PlayOneShot(_coinPickupSounds[soundIndex]);
+        _audioSource.PlayOneShot(_coinPickupSounds[soundIndex]);
     }
 }
