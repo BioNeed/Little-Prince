@@ -2,6 +2,7 @@ using UnityEngine;
 
 public class DeathZone : MonoBehaviour
 {
+    [SerializeField] private VerticalMovement _verticalMovement;
     [SerializeField] private Transform _respawnPoint;
     [SerializeField] private GameObject _deathScreen;
     [SerializeField] private AudioSource _backgroundAudio;
@@ -51,5 +52,6 @@ public class DeathZone : MonoBehaviour
         _isDead = false;
         _deathScreen.SetActive(false);
         _backgroundAudio.Play();
+        _verticalMovement.ResetVerticalMovement();
     }
 }

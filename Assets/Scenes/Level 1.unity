@@ -1840,6 +1840,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1369168682}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -1960,6 +1961,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 457695686}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -2712,7 +2714,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 30
+  orthographic size: 20
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -3304,6 +3306,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1742818977}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -5913,6 +5916,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1196098468}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -7635,7 +7639,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495248453}
   m_LocalRotation: {x: 0.003435346, y: -0, z: -0, w: 0.99999416}
-  m_LocalPosition: {x: 1055.6, y: 11.2, z: 0}
+  m_LocalPosition: {x: -12.2, y: -0.5, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8612,6 +8616,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 392929954}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -9196,6 +9201,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 2082036030}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -10018,6 +10024,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1885760790}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -10078,6 +10085,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1514944102}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -10272,7 +10280,7 @@ Transform:
   m_GameObject: {fileID: 1974960296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 356.52173, y: 12.2, z: -2.5611246}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 816311708}
@@ -11200,6 +11208,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 637216598}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}
@@ -11466,6 +11475,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0ef873ddd0b7e5149ad7032fb43b36a5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _verticalMovement: {fileID: 1495248460}
   _respawnPoint: {fileID: 1994564642}
   _deathScreen: {fileID: 1722102642}
   _backgroundAudio: {fileID: 787123131}

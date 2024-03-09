@@ -15,7 +15,7 @@ public class BranchFinder : MonoBehaviour
         if (hit.collider != null && hit.collider.TryGetComponent(out BranchPulling branchPulling))
         {
             branchPulling.TryStartPulling(_target);
-            _verticalMovement.StopJump();
+            _verticalMovement.ResetVerticalMovement();
             _physicsMovement.SetBranchPulling(branchPulling);
         }
     }

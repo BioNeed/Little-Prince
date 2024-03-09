@@ -284,6 +284,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 132.99457
@@ -370,6 +374,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 70.25238
@@ -1624,6 +1632,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 82.888855
@@ -2668,6 +2680,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 85.81366
@@ -3811,6 +3827,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 134.42865
@@ -3950,6 +3970,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 69.55316
@@ -5253,6 +5277,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 100.57318
@@ -5610,6 +5638,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 149.06244
@@ -6746,6 +6778,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 127.03461
@@ -6832,6 +6868,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 63.640137
@@ -7199,7 +7239,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1495248453}
   m_LocalRotation: {x: 0.003435346, y: -0, z: -0, w: 0.99999416}
-  m_LocalPosition: {x: 2823.68, y: 13.83, z: 0}
+  m_LocalPosition: {x: 1122.4, y: 0.4, z: -0.1}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -8624,7 +8664,7 @@ Transform:
   m_GameObject: {fileID: 1974960296}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 1560, y: 12.2, z: -2.5611246}
-  m_LocalScale: {x: 1.3, y: 1.3, z: 1.3}
+  m_LocalScale: {x: 1.7, y: 1.7, z: 1.7}
   m_ConstrainProportionsScale: 1
   m_Children:
   - {fileID: 816311708}
@@ -8838,6 +8878,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 164.84882
@@ -8924,6 +8968,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 62.910095
@@ -13132,6 +13180,10 @@ PrefabInstance:
       propertyPath: _backgroundAudio
       value: 
       objectReference: {fileID: 787123131}
+    - target: {fileID: 3563074745649383333, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
+      propertyPath: _verticalMovement
+      value: 
+      objectReference: {fileID: 1495248460}
     - target: {fileID: 3563074745649383334, guid: 1afd8de16fc98854a8a07fced29b7be2, type: 3}
       propertyPath: m_Size.x
       value: 49.080017
