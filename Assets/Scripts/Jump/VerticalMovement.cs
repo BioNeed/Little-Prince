@@ -54,8 +54,9 @@ public class VerticalMovement : MonoBehaviour
         }
     }
 
-    public void StopJump()
+    public void ResetVerticalMovement()
     {
+        _isJumped = false;
         _verticalMovePosition = 0f;
     }
 
