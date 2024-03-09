@@ -1,6 +1,6 @@
 using UnityEngine;
 
-public class BellCollision : MonoBehaviour
+public class BellTrigger : MonoBehaviour
 {
     [SerializeField] private Bell _bell;
     [SerializeField] private Animator _bellAnimator;
@@ -9,7 +9,7 @@ public class BellCollision : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            _bell.RingBell();
+            _bell.RingBell(initiatedByCollision: true);
             _bellAnimator.SetTrigger("IsRinging");
         }
     }

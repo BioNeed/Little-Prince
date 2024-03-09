@@ -10,14 +10,14 @@ public class FloatingPlatform : MonoBehaviour
     private WayPoint _nextWayPoint;
     private Vector2 _floatingMovementNormalized;
 
-    public Vector2 FloatingMovement => _floatingMovementNormalized * _speed * Time.deltaTime;
+    public Vector2 FloatingMovement => _floatingMovementNormalized * _speed * Time.fixedDeltaTime;
 
     private void Start()
     {
         InitFloatingMovement();
     }
 
-    private void Update()
+    private void FixedUpdate()
     {
         transform.position = MoveTowards(_nextWayPoint.transform.position, _floatingMovementNormalized);
 
@@ -46,7 +46,7 @@ public class FloatingPlatform : MonoBehaviour
 
     private Vector2 MoveTowards(Vector3 towardsPosition, Vector2 movement)
     {
-        Vector3 modifiedMovement = movement.normalized * _speed * Time.deltaTime;
+        Vector3 modifiedMovement = movement.normalized * _speed * Time.fixedDeltaTime;
 
         if (Vector2.Distance(transform.position, towardsPosition) < modifiedMovement.magnitude)
         {
