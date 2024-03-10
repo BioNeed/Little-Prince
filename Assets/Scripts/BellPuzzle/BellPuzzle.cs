@@ -10,7 +10,7 @@ public class BellPuzzle : MonoBehaviour
     [SerializeField] private AudioClip _puzzleSolvedSound;
     [SerializeField] private BellPlatform _bellPlatform;
 
-    private List<int> _bellsRang = new ();
+    private List<int> _bellsRang = new List<int>();
     private AudioSource _audioSource;
     private bool _ringing = false;
     private bool _solved = false;
