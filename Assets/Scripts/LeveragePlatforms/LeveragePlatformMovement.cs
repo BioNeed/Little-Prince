@@ -103,7 +103,7 @@ namespace Assets.Scripts.LeveragePlatforms
 
         private Vector2 CalculatePlatformMovement()
         {
-            Vector2 newFloatingMovement = new Vector2
+            var newFloatingMovement = new Vector2
             {
                 x = _nextPosition.x - transform.position.x,
                 y = _nextPosition.y - transform.position.y,
