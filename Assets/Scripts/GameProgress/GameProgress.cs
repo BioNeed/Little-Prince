@@ -6,24 +6,13 @@ public class GameProgress : MonoBehaviour
     [SerializeField] private DisplayScrollText _displayScrollText;
 
     [TextArea] [SerializeField] private string _messageOnLevelFailure;
-    [TextArea] [SerializeField] private string _messageOnLevel1Loaded;
-    [TextArea] [SerializeField] private string _messageOnLevel1Finished;
-    [TextArea] [SerializeField] private string _messageOnLevel2Loaded;
-    [TextArea] [SerializeField] private string _messageOnLevel2Finished;
+    [TextArea] [SerializeField] private string _messageOnLevelLoaded;
+    [TextArea] [SerializeField] private string _messageOnLevelFinished;
 
     public void FinishLevel()
     {
         Time.timeScale = 0;
-        var levelNumber = SceneManager.GetActiveScene().buildIndex;
-        switch(levelNumber)
-        {
-            case 1:
-                _displayScrollText.DisplayText(_messageOnLevel1Finished, LoadNextLevel);
-                break;
-            case 2:
-                _displayScrollText.DisplayText(_messageOnLevel2Finished, LoadNextLevel);
-                break;
-        }
+        _displayScrollText.DisplayText(_messageOnLevelFinished, LoadNextLevel);
     }
 
     public void FailLevel()
@@ -62,15 +51,7 @@ public class GameProgress : MonoBehaviour
     private void OnSceneLoaded(Scene scene, LoadSceneMode loadSceneMode)
     {
         Time.timeScale = 0;
-        switch (scene.buildIndex)
-        {
-            case 1:
-                _displayScrollText.DisplayText(_messageOnLevel1Loaded);
-                break;
-            case 2:
-                _displayScrollText.DisplayText(_messageOnLevel2Loaded);
-                break;
-        }
+        _displayScrollText.DisplayText(_messageOnLevelLoaded);
     }
 
     private void OnDisable()
