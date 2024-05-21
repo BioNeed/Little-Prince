@@ -27,7 +27,7 @@ public class BellPuzzle : MonoBehaviour
             return;
         }
 
-        StartCoroutine(RingBellsWithDelay(0.8f));
+        StartCoroutine(RingBellsWithDelay(1f));
     }
 
     public void TrySolvePuzzle(int bellRangNumber)
@@ -43,7 +43,6 @@ public class BellPuzzle : MonoBehaviour
             if (_bellsRang.Count == _bellRingingOrder.Length)
             {
                 FinishPuzzle();
-                Debug.Log("Solved!");
             }
         }
         else

@@ -23,10 +23,10 @@ public class Lever : MonoBehaviour
     {
         _turnedOn = !_turnedOn;
         var firstPlatformMoveUp = _turnedOn == _firstPlatformGoesUpOnTurnedOn;
-        _firstPlatform.MovePlatform(firstPlatformMoveUp);
+        _firstPlatform?.MovePlatform(firstPlatformMoveUp);
 
         var secondPlatformMoveUp = _turnedOn == _secondPlatformGoesUpOnTurnedOn;
-        _secondPlatform.MovePlatform(secondPlatformMoveUp);
+        _secondPlatform?.MovePlatform(secondPlatformMoveUp);
         _leverAnimator.SetBool("IsOn", _turnedOn);
         _leverSounds.PlayLeverToggling();
     }

@@ -10,7 +10,7 @@ public class LeveragePuzzleCollision : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            _cameraZooming.ZoomCamera(_cameraPositionOnZoom.position, _cameraSizeOnZoom);
+            _cameraZooming?.ZoomCamera(_cameraPositionOnZoom.position, _cameraSizeOnZoom);
         }
     }
 
@@ -18,7 +18,7 @@ public class LeveragePuzzleCollision : MonoBehaviour
     {
         if (collision.GetComponent<Player>() != null)
         {
-            _cameraZooming.UnZoomCamera();
+            _cameraZooming?.UnZoomCamera();
         }
     }
 }
