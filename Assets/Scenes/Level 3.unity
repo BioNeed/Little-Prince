@@ -965,7 +965,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -2529,6 +2529,10 @@ PrefabInstance:
     - target: {fileID: 3167067182641116058, guid: 0edcf08e885976b4db205a516c0504cd, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 3167067182641116059, guid: 0edcf08e885976b4db205a516c0504cd, type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     - target: {fileID: 3167067182641116060, guid: 0edcf08e885976b4db205a516c0504cd, type: 3}
       propertyPath: m_Name
@@ -5458,7 +5462,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -5642,14 +5646,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 494159447}
-  m_LocalRotation: {x: -0, y: -0, z: -0.18274055, w: 0.9831612}
-  m_LocalPosition: {x: 2689.3, y: 88.8, z: 10.073458}
-  m_LocalScale: {x: 1.7611088, y: 1.7611088, z: 1.7611086}
+  m_LocalRotation: {x: -0, y: -0, z: 0.013913053, w: 0.9999032}
+  m_LocalPosition: {x: 2705.25, y: 79.85, z: 10.073458}
+  m_LocalScale: {x: -1.761109, y: 1.7611088, z: 1.7611086}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 15
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: -21.059}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 1.594}
 --- !u!114 &494159449
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -5679,7 +5683,7 @@ CircleCollider2D:
   m_UsedByComposite: 0
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
-  m_Radius: 8.1
+  m_Radius: 10.19
 --- !u!212 &494159451
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -5721,7 +5725,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: -4
-  m_Sprite: {fileID: 21300000, guid: 4a9caf255d768dc449649f1965b8cc45, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 1fcfd475bd51be14b9858f225e42640c, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -7299,6 +7303,10 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 1448376042}
     m_Modifications:
+    - target: {fileID: 2099031039, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
+      objectReference: {fileID: 0}
     - target: {fileID: 5136553107227168497, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
       propertyPath: m_RootOrder
       value: 2
@@ -7343,9 +7351,17 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 5136553107227168498, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
+      propertyPath: m_SortingOrder
+      value: -5
+      objectReference: {fileID: 0}
     - target: {fileID: 5136553107227168499, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
       propertyPath: m_Name
       value: tree3
+      objectReference: {fileID: 0}
+    - target: {fileID: 5136553108463665388, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
+      propertyPath: m_SortingOrder
+      value: -4
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 000d33a313f93aa47a4e88830069fe77, type: 3}
@@ -8676,9 +8692,9 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 0}
-  m_audioClip: {fileID: 8300000, guid: 60834e433f38a05469ea7d0ac9b852ee, type: 3}
+  m_audioClip: {fileID: 8300000, guid: 70f20a00d04ce434e8e17c4038b5cee3, type: 3}
   m_PlayOnAwake: 1
-  m_Volume: 0.4
+  m_Volume: 0.07
   m_Pitch: 1
   Loop: 1
   Mute: 0
@@ -8996,7 +9012,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -10075,7 +10091,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -11524,7 +11540,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -13221,7 +13237,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 35bce218e8a916248a6ae1f84b65f18d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -14204,7 +14220,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -5
+  m_SortingOrder: -6
   m_Sprite: {fileID: 21300000, guid: f4d5d12e168ad4b45a281f4d8ae2e69b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -15027,19 +15043,36 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _displayScrollText: {fileID: 1304044148}
+  _menuSceneNumber: 1
   _messageOnLevelFailure: "\u041A \u0441\u043E\u0436\u0430\u043B\u0435\u043D\u0438\u044E,
     \u0432\u0430\u043C \u043D\u0435 \u0443\u0434\u0430\u043B\u043E\u0441\u044C \u0441\u043E\u0431\u0440\u0430\u0442\u044C
     \u043D\u0443\u0436\u043D\u043E\u0435 \u043A\u043E\u043B\u0438\u0447\u0435\u0441\u0442\u0432\u043E
     \u0437\u0432\u0435\u0437\u0434. \u041F\u043E\u043F\u0440\u043E\u0431\u0443\u0439\u0442\u0435
     \u0435\u0449\u0435 \u0440\u0430\u0437"
-  _messageOnLevelLoaded: "\u0422\u0435\u043A\u0441\u0442 \u0442\u0440\u0435\u0442\u044C\u0435\u0433\u043E
-    \u0443\u0440\u043E\u0432\u043D\u044F."
-  _messageOnLevelFinished: "\u0412\u0435\u043B\u0438\u043A\u043E\u043B\u0435\u043F\u043D\u043E!
-    \u0422\u0435\u043F\u0435\u0440\u044C \u043C\u043E\u0436\u043D\u043E \u0440\u0430\u0441\u0441\u043B\u0430\u0431\u0438\u0442\u044C\u0441\u044F
-    \u0438 \u043D\u0435 \u0432\u043E\u043B\u043D\u043E\u0432\u0430\u0442\u044C\u0441\u044F,
-    \u0447\u0442\u043E \u043A\u043E\u043C\u0443-\u0442\u043E \u043D\u0443\u0436\u043D\u0430
-    \u043F\u043E\u043C\u043E\u0449\u044C... \u041D\u0430 \u044D\u0442\u043E\u0439
-    \u043F\u043B\u0430\u043D\u0435\u0442\u0435"
+  _messageOnLevelLoaded: "\u041F\u0440\u0438\u0432\u0435\u0442! \u0410 \u043C\u044B
+    \u0442\u0435\u0431\u044F \u0443\u0436\u0435 \u0437\u0430\u0436\u0434\u0430\u043B\u0438\u0441\u044C.
+    \u0422\u044B \u043E\u0447\u0435\u043D\u044C \u0441\u0438\u043B\u044C\u043D\u043E
+    \u043F\u043E\u043C\u043E\u0433 \u043D\u0430\u0448\u0435\u0439 \u043F\u043B\u0430\u043D\u0435\u0442\u0435,
+    \u0438 \u043C\u043D\u0435, \u043A\u043E\u043D\u0435\u0447\u043D\u043E, \u043E\u0447\u0435\u043D\u044C
+    \u0433\u0440\u0443\u0441\u0442\u043D\u043E \u0441 \u0442\u043E\u0431\u043E\u0439
+    \u0440\u0430\u0441\u0441\u0442\u0430\u0432\u0430\u0442\u044C\u0441\u044F :(\r\n\u041D\u043E
+    \u044F \u0443\u0432\u0435\u0440\u0435\u043D, \u0432\u043F\u0435\u0440\u0435\u0434\u0438
+    \u0442\u043E\u043B\u044C\u043A\u043E \u0441\u0430\u043C\u043E\u0435 \u043B\u0443\u0447\u0448\u0435\u0435!
+    \u042F \u0441\u043B\u044B\u0448\u0430\u043B, \u0447\u0442\u043E \u0433\u0434\u0435-\u0442\u043E
+    \u043D\u0435\u0434\u0430\u043B\u0435\u043A\u043E \u043F\u0440\u0438\u0437\u0435\u043C\u043B\u0438\u043B\u0441\u044F
+    \u043B\u0435\u0442\u0447\u0438\u043A \u0438 \u0436\u0434\u0435\u0442 \u0442\u0435\u0431\u044F,
+    \u0447\u0442\u043E\u0431\u044B \u043F\u043E\u043B\u0435\u0442\u0435\u0442\u044C
+    \u0434\u0430\u043B\u044C\u0448\u0435 \u0432 \u043D\u0435\u0437\u0430\u0431\u044B\u0432\u0430\u0435\u043C\u043E\u0435
+    \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435. \u041D\u0430\u0439\u0434\u0438
+    \u0435\u0433\u043E \u0441\u0430\u043C\u043E\u043B\u0435\u0442 \u0438 \u043E\u0442\u043F\u0440\u0430\u0432\u043B\u044F\u0439\u0441\u044F
+    \u0441 \u043D\u0438\u043C \u0432 \u043F\u0443\u0442\u044C!"
+  _messageOnLevelFinished: "\u041F\u0440\u0438\u0432\u0435\u0442, \u043C\u043E\u0439
+    \u044E\u043D\u044B\u0439 \u0434\u0440\u0443\u0433! \u041E\u0447\u0435\u043D\u044C
+    \u0440\u0430\u0434, \u0447\u0442\u043E \u0442\u044B \u043D\u0430\u0448\u0435\u043B
+    \u043C\u0435\u043D\u044F. \u0412\u043F\u0435\u0440\u0435\u0434\u0438 \u043D\u0430\u0441
+    \u0436\u0434\u0435\u0442 \u0438\u043D\u0442\u0435\u0440\u0435\u0441\u043D\u043E\u0435
+    \u043F\u0440\u0438\u043A\u043B\u044E\u0447\u0435\u043D\u0438\u0435!\r\n\u041F\u0440\u0438\u0441\u0442\u0435\u0433\u043D\u0438
+    \u0440\u0435\u043C\u043D\u0438 \u0438\u0438\u0438\u0438\u2026 \u0432\u0437\u043B\u0435\u0442\u0430\u0435\u043C!"
 --- !u!4 &1318890028
 Transform:
   m_ObjectHideFlags: 0
@@ -21517,8 +21550,8 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1911589493}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2497.6, y: 42.7, z: 0.14476418}
-  m_LocalScale: {x: 2.1946986, y: 1.2147194, z: 1.6328}
+  m_LocalPosition: {x: 2508.28, y: 41.4184, z: 0.14476418}
+  m_LocalScale: {x: 4.23094, y: 1.7830867, z: 1.6328}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 275124805}
@@ -23179,7 +23212,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 35bce218e8a916248a6ae1f84b65f18d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -24512,7 +24545,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 0
   m_SortingLayer: 0
-  m_SortingOrder: -4
+  m_SortingOrder: -5
   m_Sprite: {fileID: 21300000, guid: 35bce218e8a916248a6ae1f84b65f18d, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0

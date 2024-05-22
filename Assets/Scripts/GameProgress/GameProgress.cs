@@ -4,6 +4,7 @@ using UnityEngine.SceneManagement;
 public class GameProgress : MonoBehaviour
 {
     [SerializeField] private DisplayScrollText _displayScrollText;
+    [SerializeField] private int _menuSceneNumber;
 
     [TextArea] [SerializeField] private string _messageOnLevelFailure;
     [TextArea] [SerializeField] private string _messageOnLevelLoaded;
@@ -27,7 +28,7 @@ public class GameProgress : MonoBehaviour
         int levelNumber = SceneManager.GetActiveScene().buildIndex;
         if (levelNumber + 1 == SceneManager.sceneCountInBuildSettings)
         {
-            loadingLevelNumber = 0;
+            loadingLevelNumber = _menuSceneNumber;
         }
         else
         {
